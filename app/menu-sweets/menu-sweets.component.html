@@ -1,0 +1,43 @@
+<body>
+  <app-navb></app-navb>
+  <div class="parallax"></div>
+<h1>MENU</h1>
+<nav class="menu-nav">
+  <a class="menu-nav-item" routerLink="/menu" routerLinkActive="actve">SPECIAL</a>
+  <a class="menu-nav-item" routerLink="/menu-food" routerLinkActive="actve">FOOD</a>
+  <a class="menu-nav-item" routerLink="/menu-sweets" routerLinkActive="actve">SWEETS</a>
+  <a class="menu-nav-item" routerLink="/menu-drinks" routerLinkActive="actve">DRINK</a>
+  <a class="menu-nav-item" routerLink="/menu-latte" routerLinkActive="actve">Pokemon Latte to Choose</a>
+</nav>
+<section class="menu-sec-special">
+  <h1>SWEETS</h1>
+  <p class="special-sub">It is a limited time menu until Thursday, March 19, 2020 ♪</p>
+  <div class="container">
+    <div class="container">
+      <section class="basic-grid">
+        <div class="card" *ngFor="let i of array"><img class="card-img" mat-card-image [src]= 'i.imageUrl' alt="food1">
+          <div class="card-container">
+          <h4 class="dish">{{i.name}}</h4>
+          <p class="dish-price">₹ {{i.price}} (tax included)</p>
+          <p class="dish-desc">{{i.content}}</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  <p class="notice">Please contact store staff for allergy information.</p>
+  </div>
+</section>
+<div class="container-">
+  <br/><br/><br/><br/>
+<h1>MENU</h1>
+<nav class="menu-nav">
+  <a class="menu-nav-item" routerLink="/menu" routerLinkActive="active">SPECIAL</a>
+  <a class="menu-nav-item" routerLink="/menu-food" routerLinkActive="active">FOOD</a>
+  <a class="menu-nav-item" routerLink="/menu-sweets" routerLinkActive="active">SWEETS</a>
+  <a class="menu-nav-item" routerLink="/menu-drinks" routerLinkActive="active">DRINK</a>
+  <a class="menu-nav-item" routerLink="/menu-latte" routerLinkActive="active">Pokemon Latte to Choose</a>
+</nav>
+</div>
+<app-access></app-access>
+<app-footer></app-footer>
+</body>

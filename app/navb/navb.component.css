@@ -1,0 +1,42 @@
+.right{
+  float: right;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  transform: translateX(65%);
+}
+.logo{
+  width: 75%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 1vw;
+}
+.container-{
+  border-bottom: rgb(186, 162, 97);
+  border-bottom-style: solid;
+}
+.anchor{
+  width: 40px;
+  color: rgb(185, 161, 95);
+  padding:1vw;
+  text-decoration: none;
+
+}
+a.anchor:hover{
+  font-style: italic;
+}
+.go{
+  background-color:rgb(185, 161, 95);
+  text-decoration: none;
+  color: aliceblue;
+  padding: 2vh;
+  border-radius: 25px;
+}
+a.go:hover{
+  font-style: italic;
+}
+hr {
+  color: rgb(186, 162, 97);
+}
+.logo-img {
+  margin-left: -60px;
+}

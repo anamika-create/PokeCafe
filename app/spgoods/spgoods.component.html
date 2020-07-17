@@ -1,0 +1,40 @@
+<body>
+  <app-navb></app-navb>
+  <div class="parallax"></div>
+<h1>MENU</h1>
+<nav class="menu-nav">
+  <a class="menu-nav-item" routerLink="/goods" routerLinkActive="actve">GOODS</a>
+  <a class="menu-nav-item" routerLink="/spgoods" routerLinkActive="actve">SPECIAL</a>
+</nav>
+<section class="menu-sec-special">
+  <h1>SPECIAL</h1>
+  <h4 class="dish-desc">(Prices include consumption tax.)</h4>
+  <p class="special-sub">Select special goods when making your Pokémon Cafe reservation!</p>
+  <div class="container">
+    <div class="container">
+      <section class="basic-grid">
+        <div class="card" *ngFor="let i of array"><img class="card-img" mat-card-image [src]= 'i.imageUrl' alt="food1">
+          <div class="card-container">
+          <h4 class="dish">{{i.name}}</h4>
+          <p class="dish-price">₹ {{i.price}} (tax included)</p>
+          <p class="dish-desc">{{i.content}}</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <p class="notice">*Images are provided for illustrative purposes only. Actual color and design may differ.<br/>
+      *Please understand if our stock runs out.<br/>
+      *We may limit the purchase quantity so more customers can purchase products.</p>
+  </div>
+</section>
+<div class="container-">
+  <br/><br/><br/><br/>
+<h1>GOODS</h1>
+<nav class="menu-nav">
+  <a class="menu-nav-item" routerLink="/goods" routerLinkActive="actve">GOODS</a>
+  <a class="menu-nav-item" routerLink="/spgoods" routerLinkActive="actve">SPECIAL</a>
+</nav>
+</div>
+<app-access></app-access>
+<app-footer></app-footer>
+</body>

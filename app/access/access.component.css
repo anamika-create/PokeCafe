@@ -1,0 +1,55 @@
+h1{
+  font-family: Lato Thin 100;
+  font-weight: 200;
+  color: rgb(186,162,97);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+p {
+  font-family: Lato;
+  font-weight: 200;
+  color: rgb(186,162,97);
+  margin-bottom: 30px;
+}
+h5 {
+  font-family: Lato;
+  font-weight: 200;
+  background-color: rgb(186,162,97);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+h6 {
+  font-family: Lato 200;
+  color: rgb(186,162,97);
+  max-width: fit-content;
+  margin: 0;
+}
+p.time {
+  font-family: Lato;
+  font-weight: 200;
+  color: rgb(186,162,97);
+}
+div.time {
+  max-width: 500px;
+  border:rgb(186,162,97);
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+}
+.ref {
+  padding-top: 30px;
+  text-align: center;
+  width: 150px;
+  margin: 5px;
+}
+div#ref-main {
+  text-align: center;
+  align-items: center;
+  margin-left: 350px;
+
+}
+.col-md-6 {
+  padding: 10px;
+}

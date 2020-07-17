@@ -1,0 +1,41 @@
+
+#cont
+{
+  padding: 10px;
+}
+#con
+{
+  background-color : white;
+ color:   rgb(185, 161, 95);
+
+  display: block;
+}
+.display {
+  font-size: 18px;
+  font-family: Lato Thin 100;
+  font-weight: 200;
+}
+
+h1{
+  font-family: Lato Thin 100;
+  font-weight: 200;
+  color: rgb(186,162,97);
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+mat-expansion-panel {
+  margin-bottom: 10px;
+  border: rgb(186,162,97);
+  border-style: solid;
+  border-width: 1px;
+}
+.parallax {
+  background-image: url("https://www.pokemoncenter-online.com/cafe/common/img/bg_goods_0115.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

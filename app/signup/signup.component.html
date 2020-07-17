@@ -1,0 +1,31 @@
+<body>
+  <div class="container">
+
+  <mat-card class="matcc">
+    <mat-card-header>
+      <mat-card-title><h4>Sign Up</h4></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+  <form>
+    <mat-form-field class="full-width">
+              <mat-label>Username</mat-label>
+              <input  matInput placeholder="Enter email" [(ngModel)]="username" name="username" autocomplete="off" required>
+              <mat-error>Username Required!</mat-error>
+           </mat-form-field>
+           <br>
+           <mat-form-field class="full-width">
+              <mat-label>Password</mat-label>
+              <input  matInput placeholder="Password" [(ngModel)]=" password" name="password" type="password" autocomplete="off" required>
+              <mat-error>Password Required!</mat-error>
+            </mat-form-field>
+  <br>
+            <button mat-raised-button (click)="Sign()" color="primary">SIGN UP</button>
+            &nbsp;&nbsp;&nbsp;<button mat-raised-button (click)="Cancel()" color="warn">CANCEL</button><br/><br/>
+            <a href='/login'>Already Registered?</a>
+          </form>
+          </mat-card-content>
+  </mat-card>
+
+  </div>
+  </body>
+
