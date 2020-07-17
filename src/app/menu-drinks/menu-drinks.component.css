@@ -1,0 +1,145 @@
+h1{
+  font-family: Lato Thin 100;
+  font-weight: 200;
+  color: rgb(186,162,97);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+p {
+  font-family: Lato;
+  font-weight: 200;
+  color: rgb(186,162,97);
+  margin-bottom: 30px;
+}
+h5 {
+  font-family: Lato;
+  font-weight: 200;
+  background-color: rgb(186,162,97);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+h6 {
+  font-family: Lato 200;
+  color: rgb(186,162,97);
+  max-width: fit-content;
+  margin: 0;
+}
+p.time {
+  font-family: Lato;
+  font-weight: 200;
+  color: rgb(186,162,97);
+}
+div.time {
+  max-width: 500px;
+  border:rgb(186,162,97);
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+.col-md-6 {
+  padding: 10px;
+}
+.menu-nav{
+  border-color: rgb(186,162,97);
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding:20px;
+  margin-bottom: 60px;
+}
+.menu-nav-item{
+  text-align: center;
+  color: rgb(185, 161, 95);
+  padding:40px;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 18.4px;
+}
+.menu-nav-item:hover{
+  background-size: inherit  ;
+  background-color: rgb(247, 239, 224);
+}
+.menu-sec-special{
+  text-align: center;
+}
+.special-sub{
+  font-family: Lato;
+  color: rgb(186,162,97);
+  text-align: center;
+  max-width: 700px;
+  border-bottom-color: rgb(186,162,97) ;
+  border-bottom-style: solid;
+  border-top-style:solid ;
+  border-top-width:.3px ;
+  border-bottom-width: .3px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.menu-child{
+  display: inline-block;
+}
+.example-card {
+  max-width: 400px;
+  text-align: center;
+}
+
+.card-img {
+  max-height: 300px;
+}
+
+.card-container {
+  padding: 20px;
+}
+.dish{
+  font-family: Lato;
+  font-weight: 300;
+  font-size: large;
+  color:  rgb(186,162,97) ;
+  padding: 5px;
+  border-bottom: 4px dotted;
+}
+.dish-price{
+  font-family: Lato;
+  font-weight: 300;
+  font-size: medium;
+  color:  rgb(186,162,97) ;
+}
+.dish-desc{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px ;
+    color:  rgb(186,162,97);
+    padding:8px;
+}
+.blank{
+  padding: 30px 10px;
+}
+
+.notice{
+  color:  rgb(186,162,97);
+  float: left;
+  margin-top: 5vh;
+}
+
+.parallax {
+  background-image: url("https://www.pokemoncenter-online.com/cafe/common/img/bg_menu.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr{
+  border-color: rgb(186,162,97);
+}

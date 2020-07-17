@@ -1,0 +1,60 @@
+.slideshow-container {
+  max-width: 100%;
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  animation: ease-in-out;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5.1s;
+  animation-name: fade;
+  animation-duration: 5.1s;
+  z-index: -1;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .3}
+  10% {opacity: 1}
+  90% {opacity: 1}
+  100% {opacity: .4}
+}
+
+@keyframes fade {
+  0% {opacity: .3}
+  10% {opacity: 1}
+  90% {opacity: 1}
+  100% {opacity: .4}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.banner{
+
+  padding: 3px;
+  text-align: center;
+  max-width: fit-content;
+  max-height: fit-content;
+  transform: translate(28%,-350px);
+  background:rgba(188, 155, 93, 0.8);
+  font-size: large;
+  color: white;
+  z-index: 10;
+}
+h3.heading{
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+p.sub{
+  font-family: Lato;
+  font-size: 16px;
+  margin: 10px 50px;
+}
+
+
+

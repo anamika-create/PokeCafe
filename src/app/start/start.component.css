@@ -1,0 +1,38 @@
+.video {
+  margin-top: 20px;
+  text-align: left;
+  padding: 50px;
+}
+h1, h4{
+  font-family: Lato Thin 100;
+  font-weight: 200;
+  color: rgb(186,162,97);
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+.ref {
+  padding-top: 30px;
+  text-align: center;
+  width: 150px;
+  margin: 5px;
+}
+div#ref-main {
+  text-align: center;
+  align-items: center;
+  margin-left: 350px;
+
+}
+hr{
+  border-color: rgb(186,162,97);
+}
+.parallax {
+  background-image: url("https://www.pokemoncenter-online.com/cafe/common/img/bg_access.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+  margin-bottom: 50px;
+}

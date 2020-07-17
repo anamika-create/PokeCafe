@@ -1,0 +1,28 @@
+<app-navb></app-navb>
+<div class="parallax"></div>
+<div class="container-fluid">
+  <div id="con" style="height:30%">
+    <br/><br/>
+    <h1>NEWS </h1>
+      <p class="display" style="text-align: center;">Daily Updates for our Precious Customers.</p>
+      <br />
+    </div>
+
+    <div id ="cont" style="width:90%; margin-left: auto; margin-right: auto; height:200%">
+      <br/>
+      <mat-accordion multi="true" style="height:100%">
+        <mat-expansion-panel id="con" *ngFor="let a of arr">
+          <mat-expansion-panel-header >
+            <img src="assets/images/news.png" style="max-width: 80px;max-height: 80px;"/>
+            <p class="display">&nbsp; {{a.news}}</p>
+
+          </mat-expansion-panel-header>
+          <hr>
+        <p class="display"> {{a.newsdata}}</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>
+      <br/><br/>
+      <app-access></app-access>
+      <app-footer></app-footer>

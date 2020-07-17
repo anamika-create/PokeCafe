@@ -1,0 +1,92 @@
+<app-navb></app-navb>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <br/>
+      <h1>Reservation</h1>
+      <div class="scroll-box">
+        [Notes]<br/>
+* Pokemon Cafe seats require advance reservation. Excuse me, but please come to the store after making a reservation yourself prior.<br/>
+* Please use a different email-id for every reservation. You can create multiple accounts.<br/>
+* Please take a seat with infants as one person.<br/>
+* At Pokemon Cafe, ordering at least one menu per person is mandatory. Please note. (Excluding infants)<br/>
+* Seat reservations are only available on the website. Please note that seat reservations by telephone are not accepted. Booking for advance dates mandatory.<br/>
+* Immediately after the reservation starts, the reservation page may not be connected easily. If you have difficulty connecting, please wait a moment and then visit the booking page again.<br/>
+* Pokemon Cafe prohibits the resale or transfer of reservation information to third parties through internet auctions, regardless of purpose or reason.<br/>
+* If resale or transfer for commercial purposes is found, the reservation information may be invalidated and entry with the relevant reservation information may be refused. In this case, we will not refund any fees. In addition, we will not give you advance reservation benefits.<br/>
+* We cannot take any responsibility for troubles related to resale, transfer or exchange of reservation information.<br/>
+* Please note that 15 minutes after the reservation time will be automatically canceled without contact.<br/>
+* We don't accept your booking for today.
+      </div>
+    </div>
+    <div class="col-md-4" >
+      <br/>
+      <h3>Fill in the details</h3>
+      <mat-card >
+        <mat-form-field>
+          <mat-label>Full Name</mat-label>
+          <input matInput type="text" [(ngModel)]="name" [disabled]="status==1" required/>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>EmailId</mat-label>
+          <input matInput type="text" [(ngModel)]="email" [disabled]="true" required/>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Contact No.</mat-label>
+          <input matInput type="number" [(ngModel)]="contact" [disabled]="status==1" maxlength="10" required/>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Pick a Date</mat-label>
+        <input #minmaxInput matInput
+          [min]="minDate"
+          [max]="maxDate"
+          [matDatepicker]="minmaxvalidation"
+          [(ngModel)]="date"
+           readonly required>
+        <mat-datepicker-toggle matSuffix [for]="minmaxvalidation" [disabled]="status==1" class="date-field-toggle">
+           </mat-datepicker-toggle>
+        <mat-datepicker #minmaxvalidation ></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Timing</mat-label>
+        <mat-select [formControl]="pokemonControl" [(value)]="time" [disabled]="status==1" required>
+          <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name"
+                        [disabled]="group.disabled">
+            <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value">
+              {{pokemon.viewValue}}
+            </mat-option>
+          </mat-optgroup>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Select an option</mat-label>
+        <mat-select disableRipple [(value)]="people" [disabled]="status==1" required>
+          <mat-option value="1">1 People</mat-option>
+          <mat-option value="2">2 Peoples</mat-option>
+          <mat-option value="3">3 Peoples</mat-option>
+          <mat-option value="4">4 Peoples</mat-option>
+          <mat-option value="5">5 Peoples</mat-option>
+          <mat-option value="6">6 Peoples</mat-option>
+          <mat-option value="7">7 Peoples</mat-option>
+          <mat-option value="8">8 Peoples</mat-option>
+        </mat-select>
+      </mat-form-field><br/>
+      <button mat-raised-button [disabled]="status == 1 || !email" color="accent" (click)="book()">Book a Table</button>
+      <div *ngIf="status==1">
+        <br/>
+        <h6>You already have a reservation with this account. Please use a different account.</h6>
+      </div>
+      <div *ngIf="!email">
+        <br/>
+        <h6>Please login again. Email-Id cannot be fetched.</h6>
+      </div>
+    </mat-card>
+    </div>
+  </div>
+  <span>
+    <span>
+    <h3>Your Reservation- {{email}}</h3>
+    <button mat-raised-button color="accent" (click)="load()">Check</button></span>
+    </span>
+</div>
+<app-footer></app-footer>

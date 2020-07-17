@@ -1,0 +1,26 @@
+<app-navb></app-navb>
+<div class="parallax"></div>
+<div class="container-fluid">
+  <div id="con" style="height:30%">
+    <br/><br/>
+    <h1>FAQ </h1>
+      <p class="display" style="text-align: center;">Here, we have posted questions from customers.</p>
+      <br />
+    </div>
+
+  <div id ="cont" style="width:90%; margin-left: auto; margin-right: auto; height:200%">
+  <br/>
+  <mat-accordion multi="true" style="height:100%">
+    <mat-expansion-panel id="con" *ngFor="let a of faq">
+      <mat-expansion-panel-header >
+        <p class="display">Q: {{a.news}}</p>
+      </mat-expansion-panel-header>
+      <hr>
+    <p class="display">A: {{a.newsdata}}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  </div>
+  </div>
+  <br/><br/>
+  <app-access></app-access>
+  <app-footer></app-footer>
